@@ -2,6 +2,10 @@ import awe1 from '../assets/awe1.jpg';
 import awe2 from '../assets/awe2.jpg';
 import awe3 from '../assets/awe3.jpg';
 import awe4 from '../assets/awe4.jpg';
+import v1 from '../assets/v1.png';
+import v2 from '../assets/v2.png';
+import v3 from '../assets/v3.png';
+import v4 from '../assets/v4.png';
 
 export const projects = [
   {
@@ -13,22 +17,19 @@ export const projects = [
     images: [awe1, awe2, awe3, awe4],
     description: 'AWE is a full-stack autonomous execution system that decomposes high-level objectives into structured, observable workflows. Each task is materialized as a node in a Directed Acyclic Graph (DAG) and updates are streamed in real time. Designed for transparency, determinism, and modular extensibility, AWE supports experimentation, internal tooling, and research in autonomous systems.',
     highlights: ['Live DAG', 'WebSocket Updates'],
-    metrics: { tasksHandled: '100s concurrently',
-    liveUpdates: 'Real-time streaming'},
     pinned: true
   },
   {
-    id: 'telemetry',
-    title: 'Realtime Telemetry Dashboard',
+    id: 'venture',
+    title: 'VENTURE',
     repo: 'https://github.com/niravkpatel36/VENTURE.git',
     demo: 'https://venture-qgzz.onrender.com/',
-    stack: 'React · WebSockets · D3',
-    short: 'Realtime UI for 100+ devices; improved monitoring 4×.',
-    images: ['/assets/telemetry-1.jpg'],
-    description: 'Realtime dashboard with robust reconnection, data aggregation, and streaming visualizations for operations teams.',
-    highlights: ['Realtime charts','4× improved detection'],
-    metrics: { activeDevices: '100+', p99Latency: '<200ms' },
-    pinned: false
+    stack: 'Django · JavaScript · OAuth 2.0 · HTML/CSS',
+    short: 'A full-stack music platform that combines discovery, interactive prompts, and curated album experiences.',
+    images: [v1, v2, v3, v4],
+    description: 'VENTURE is a production-oriented, full-stack music exploration system that unifies external API integration, deterministic prompt interpretation, and custom audio playback within a single cohesive architecture. The platform supports real-time music search via the Spotify Web API, a prompt-driven mood and theme explorer, and a fully designed interactive album experience. Built with clear separation of concerns and extensibility in mind, VENTURE prioritizes predictable rendering, accessibility, and scalability while providing a forward-compatible surface for future AI-driven enhancements.',
+    highlights: ['Spotify API Integration', 'Deterministic Prompt Engine'],
+    pinned: true
   },
   {
     id: 'reco',
