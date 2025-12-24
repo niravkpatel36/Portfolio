@@ -138,6 +138,35 @@ body { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; ba
   border: 1px solid rgba(99,102,241,0.18);
 }
 
+/* === Custom polish additions === */
+
+/* Standard button styling for all buttons */
+.btn-common {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;  /* Consistent font size */
+  background-color: rgba(var(--accent-1), 0.1);  /* Light background with your accent color */
+  color: white;  /* White text */
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+/* Hover effect for buttons */
+.btn-common:hover {
+  background-color: rgba(var(--accent-2), 0.2);  /* Darker accent color on hover */
+  transform: translateY(-3px);  /* Subtle lift effect */
+}
+
+/* Active state for when button is clicked */
+.btn-common:active {
+  transform: translateY(0);  /* Reset position when clicked */
+}
+
 /* ---------- HEADER / NAV FIX ---------- */
 .site-nav {
   position: fixed;

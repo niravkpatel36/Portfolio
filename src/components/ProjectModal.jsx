@@ -1,22 +1,28 @@
 import React, { useEffect, useRef, useState } from 'react'
 
-export default function ProjectModal({project, onClose}){
-  const ref = useRef()
-  const [idx,setIdx] = useState(0)
-  useEffect(()=>{
-    const onKey = (e) => {
-      if(e.key==='Escape') onClose()
-      if(e.key==='ArrowLeft') setIdx(i => Math.max(0, i-1))
-      if(e.key==='ArrowRight') setIdx(i => Math.min(project.images.length-1, i+1))
-    }
-    document.addEventListener('keydown', onKey)
-    // trap focus
-    const previously = document.activeElement
-    ref.current?.focus()
-    return ()=>{ document.removeEventListener('keydown', onKey); previously?.focus() }
-  },[project, onClose])
+export default function ProjectModal({ project, onClose }) {
+  const ref = useRef();
+  const [idx, setIdx] = useState(0);
 
-  if(!project) return null
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === 'Escape') onClose();
+      if (e.key === 'ArrowLeft') setIdx((i) => Math.max(0, i - 1));
+      if (e.key === 'ArrowRight') setIdx((i) => Math.min(project.images.length - 1, i + 1));
+    };
+    document.addEventListener('keydown', onKey);
+
+    // trap focus
+    const previously = document.activeElement;
+    ref.current?.focus();
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      previously?.focus();
+    };
+  }, [project, onClose]);
+
+  if (!project) return null;
+
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">
       <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" onClick={onClose} />
@@ -29,22 +35,74 @@ export default function ProjectModal({project, onClose}){
               <p className="subtle mt-3">{project.description}</p>
 
               <div className="mt-4 flex gap-2 flex-wrap">
-                {project.highlights.map(h=> <div key={h} className="px-3 py-1 bg-white/6 rounded-full text-xs subtle">{h}</div>)}
+                {project.highlights.map((h) => (
+                  <div key={h} className="px-3 py-1 bg-white/6 rounded-full text-xs subtle">
+                    {h}
+                  </div>
+                ))}
               </div>
 
               <div className="mt-6 flex gap-3">
-                <a className="ribbon" href="#">Live demo</a>
-                <a className="glass px-3 py-2 rounded" href="#">Repo</a>
-                <button className="ml-auto subtle" onClick={onClose}>Close</button>
+                {/* Demo button */}
+                {project.demo && (
+                  <a
+                    className="btn-common"
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live Demo
+                  </a>
+                )}
+                {/* Repo button */}
+                {project.repo && (
+                  <a
+                    className="btn-common"
+                    href={project.repo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Repository
+                  </a>
+                )}
+                {/* Architecture button */}
+                {project.architecture && (
+                  <a
+                    className="btn-common"
+                    href={project.architecture}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Architecture
+                  </a>
+                )}
+                {/* Case Study button */}
+                {project.caseStudy && (
+                  <a
+                    className="btn-common"
+                    href={project.caseStudy}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Case Study
+                  </a>
+                )}
+                <button className="ml-auto subtle" onClick={onClose}>
+                  Close
+                </button>
               </div>
             </div>
 
             <div className="w-64 shrink-0 rounded-lg overflow-hidden" aria-hidden>
               <img src={project.images[idx] || '/assets/placeholder.jpg'} alt="" className="w-full h-40 object-cover" loading="lazy" />
               <div className="flex gap-2 mt-2">
-                {project.images.map((im,i)=>(
-                  <button key={i} onClick={()=>setIdx(i)} className={`w-10 h-8 rounded ${i===idx? 'border-2 border-indigo-500':''}`}>
-                    <img src={im} alt="" className="w-full h-full object-cover" loading="lazy"/>
+                {project.images.map((im, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setIdx(i)}
+                    className={`w-10 h-8 rounded ${i === idx ? 'border-2 border-indigo-500' : ''}`}
+                  >
+                    <img src={im} alt="" className="w-full h-full object-cover" loading="lazy" />
                   </button>
                 ))}
               </div>
@@ -53,6 +111,5 @@ export default function ProjectModal({project, onClose}){
         </div>
       </div>
     </div>
-  )
+  );
 }
-

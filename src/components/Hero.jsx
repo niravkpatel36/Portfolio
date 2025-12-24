@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-import { projects as allProjects } from '../data/projects'
+import { featured } from '../data/featured'
 import FeaturedProject from './FeaturedProject'
 
 export default function Hero(){
@@ -43,8 +43,7 @@ export default function Hero(){
     }
   },[])
 
-  // pick pinned project (or fallback to first)
-  const pinned = allProjects.find(p => p.pinned) || allProjects[0]
+  const featuredProject = featured
 
   return (
     <section className="min-h-[88vh] flex items-center">
@@ -84,9 +83,8 @@ export default function Hero(){
           >
             <div className="card-inner" style={{ transition: 'transform 150ms linear' }}>
               <FeaturedProject 
-                project={pinned} 
+                project={featuredProject}
                 onOpen={(proj)=>{
-                  // placeholder open handler (App-level state can be wired later)
                   window.alert(`Open case study: ${proj.title}`)
                 }} 
               />

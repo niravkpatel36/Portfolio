@@ -38,7 +38,7 @@ export default function FeaturedProject({ project, onOpen }) {
       <div className="fp-content">
         <div className="fp-row">
           <div className="fp-text">
-            <div className="fp-kicker">FEATURED</div>
+            <div className="fp-kicker">CURRENTLY WORKING ON</div>
             <div className="fp-title">{project.title}</div>
             <div className="fp-desc">{project.short}</div>
           </div>
