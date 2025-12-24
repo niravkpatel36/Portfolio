@@ -16,7 +16,7 @@ export default function App(){
 
       <Nav />
 
-      {/* ⭐ background stars */}
+      {/* background stars */}
       <BackgroundDecor />
 
       <main className="pt-24">

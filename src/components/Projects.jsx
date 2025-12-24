@@ -116,7 +116,6 @@ export default function Projects() {
                     >
                       View case study
                     </button>
-                    <div className="subtle">2–6 week sprints</div>
                   </div>
                 </div>
               </div>
