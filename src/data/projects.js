@@ -1,4 +1,5 @@
-import awe2 from '../assets/awe2.jpg';
+import awe1 from '../assets/awe1.png';
+import awe2 from '../assets/awe2.png';
 import awe3 from '../assets/awe3.jpg';
 import awe4 from '../assets/awe4.jpg';
 import v1 from '../assets/v1.png';
@@ -8,18 +9,9 @@ import v4 from '../assets/v4.png';
 import skrt1 from '../assets/skrt1.png';
 import skrt2 from '../assets/skrt2.png';
 import skrt3 from '../assets/skrt3.png';
+import network2 from '../assets/network2.png';
 
 export const projects = [
-  {
-    id: 'awe',
-    title: 'Autonomous Workflow Engine',
-    repo: 'https://github.com/niravkpatel36/AWE.git',
-    stack: 'React · TypeScript · FastAPI · Docker',
-    short: 'Transforms high-level goals into DAGs with live execution visualization and real-time updates.',
-    images: [awe2, awe3, awe4],
-    description: 'AWE is a full-stack autonomous execution system that decomposes high-level objectives into structured, observable workflows. Each task is materialized as a node in a Directed Acyclic Graph (DAG) and updates are streamed in real time. Designed for transparency, determinism, and modular extensibility, AWE supports experimentation, internal tooling, and research in autonomous systems.',
-    highlights: ['Live DAG', 'WebSocket Updates'],
-  },
   {
     id: 'venture',
     title: 'VENTURE',
@@ -32,6 +24,16 @@ export const projects = [
     highlights: ['Spotify API Integration', 'Deterministic Prompt Engine'],
   },
   {
+    id: 'awe',
+    title: 'Autonomous Workflow Engine',
+    repo: 'https://github.com/niravkpatel36/AWE.git',
+    stack: 'React · TypeScript · FastAPI · Docker',
+    short: 'Transforms high-level goals into DAGs with live execution visualization and real-time updates.',
+    images: [awe1, awe2, awe3, awe4],
+    description: 'AWE is a full-stack autonomous execution system that decomposes high-level objectives into structured, observable workflows. Each task is materialized as a node in a Directed Acyclic Graph (DAG) and updates are streamed in real time. Designed for transparency, determinism, and modular extensibility, AWE supports experimentation, internal tooling, and research in autonomous systems.',
+    highlights: ['Live DAG', 'WebSocket Updates'],
+  },
+  {
     id: 'skrt',
     title: 'SKRT',
     stack: 'Python · Kivy · OOP · Canvas',
@@ -41,6 +43,16 @@ export const projects = [
     description: 'SKRT is a Python game built with Kivy that demonstrates interactive graphics, procedural tile generation, perspective rendering, and smooth animation. Players navigate a spaceship along a continuously scrolling track while avoiding collisions. The project emphasizes modular design, reusable components, and cross-platform deployment for desktop and mobile environments.',
     highlights: ['Perspective Rendering','Score Tracking'],
   },
+  {
+  id: 'network',
+  title: 'Network',
+  repo: 'https://github.com/niravkpatel36/Network.git',
+  stack: 'Python · JavaScript · HTML/CSS · SQL',
+  short: 'A full-stack social networking platform with posts, followers, and interactive likes.',
+  images: [network2],
+  description: 'Network is a full-stack social media platform built with Django that allows users to create and edit posts, follow other users, and interact with content through likes. It features dynamic, asynchronous updates using JavaScript fetch calls, responsive design with HTML/CSS, and scalable data handling with SQLite and Django ORM. The platform implements secure user authentication, pagination for feeds, and a clean separation of concerns between frontend and backend, demonstrating full-stack best practices for modern web applications.',
+  highlights: ['Asynchronous Post Editing', 'Follower System'],
+},
 ];
 
 
