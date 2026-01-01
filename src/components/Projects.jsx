@@ -114,7 +114,7 @@ export default function Projects() {
                       onClick={() => setOpen(p)}
                       className="cta-outline"
                     >
-                      View case study
+                      Learn More
                     </button>
                   </div>
                 </div>

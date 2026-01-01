@@ -70,7 +70,7 @@ export default function FeaturedProject({ project, onOpen }) {
             className="cta-primary"
             style={{ marginLeft: "auto" }}
           >
-            View case study
+            Learn More
           </button>
         </div>
       </div>

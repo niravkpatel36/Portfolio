@@ -9,9 +9,20 @@ import v4 from '../assets/v4.png';
 import skrt1 from '../assets/skrt1.png';
 import skrt2 from '../assets/skrt2.png';
 import skrt3 from '../assets/skrt3.png';
-import network2 from '../assets/network2.png';
+import network1 from '../assets/network1.png';
+import commerce1 from '../assets/commerce1.png';
 
 export const projects = [
+  {
+    id: 'awe',
+    title: 'Autonomous Workflow Engine',
+    repo: 'https://github.com/niravkpatel36/AWE.git',
+    stack: 'React · TypeScript · FastAPI · Docker',
+    short: 'Transforms high-level goals into DAGs with live execution visualization and real-time updates.',
+    images: [awe1, awe2, awe3, awe4],
+    description: 'AWE is a full-stack autonomous execution system that decomposes high-level objectives into structured, observable workflows. Each task is materialized as a node in a Directed Acyclic Graph (DAG) and updates are streamed in real time. Designed for transparency, determinism, and modular extensibility, AWE supports experimentation, internal tooling, and research in autonomous systems.',
+    highlights: ['Live DAG', 'WebSocket Updates'],
+  },
   {
     id: 'venture',
     title: 'VENTURE',
@@ -24,16 +35,6 @@ export const projects = [
     highlights: ['Spotify API Integration', 'Deterministic Prompt Engine'],
   },
   {
-    id: 'awe',
-    title: 'Autonomous Workflow Engine',
-    repo: 'https://github.com/niravkpatel36/AWE.git',
-    stack: 'React · TypeScript · FastAPI · Docker',
-    short: 'Transforms high-level goals into DAGs with live execution visualization and real-time updates.',
-    images: [awe1, awe2, awe3, awe4],
-    description: 'AWE is a full-stack autonomous execution system that decomposes high-level objectives into structured, observable workflows. Each task is materialized as a node in a Directed Acyclic Graph (DAG) and updates are streamed in real time. Designed for transparency, determinism, and modular extensibility, AWE supports experimentation, internal tooling, and research in autonomous systems.',
-    highlights: ['Live DAG', 'WebSocket Updates'],
-  },
-  {
     id: 'skrt',
     title: 'SKRT',
     stack: 'Python · Kivy · OOP · Canvas',
@@ -44,15 +45,25 @@ export const projects = [
     highlights: ['Perspective Rendering','Score Tracking'],
   },
   {
+  id: 'commerce',
+  title: 'Commerce',
+  repo: 'https://github.com/niravkpatel36/Commerce.git',
+  stack: 'Python · JavaScript · HTML/CSS · SQLite',
+  short: 'A full-stack auction platform with real-time bidding logic, watchlists, and role-based permissions.',
+  images: [commerce1],
+  description: 'Commerce is a full-stack e-commerce auction platform designed around competitive bidding workflows and robust server-side validation. The system supports authenticated users creating and managing auction listings, placing bids with enforced constraints, tracking items via personal watchlists, and participating in threaded discussions. Auction state transitions are handled deterministically, ensuring consistent winner selection and permission-aware interactions. Built with Django’s ORM and authentication system, the platform emphasizes clean data modeling, separation of concerns, and maintainable full-stack architecture.',
+  highlights: ['Bidding Logic', 'Access Control'],
+  },
+  {
   id: 'network',
   title: 'Network',
   repo: 'https://github.com/niravkpatel36/Network.git',
   stack: 'Python · JavaScript · HTML/CSS · SQL',
-  short: 'A full-stack social networking platform with posts, followers, and interactive likes.',
-  images: [network2],
-  description: 'Network is a full-stack social media platform built with Django that allows users to create and edit posts, follow other users, and interact with content through likes. It features dynamic, asynchronous updates using JavaScript fetch calls, responsive design with HTML/CSS, and scalable data handling with SQLite and Django ORM. The platform implements secure user authentication, pagination for feeds, and a clean separation of concerns between frontend and backend, demonstrating full-stack best practices for modern web applications.',
+  short: 'A full-stack social networking prototype with posts, followers, and interactive likes.',
+  images: [network1],
+  description: 'Network is a full-stack social media prototype built with Django that allows users to create and edit posts, follow other users, and interact with content through likes. It features dynamic, asynchronous updates using JavaScript fetch calls, responsive design with HTML/CSS, and scalable data handling with SQLite and Django ORM. The platform implements secure user authentication, pagination for feeds, and a clean separation of concerns between frontend and backend, demonstrating full-stack best practices for modern web applications.',
   highlights: ['Asynchronous Post Editing', 'Follower System'],
-},
+  },
 ];
 
 
