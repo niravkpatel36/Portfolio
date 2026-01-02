@@ -1,3 +1,5 @@
+import awe1 from '../assets/awe1.png';
+
 export const featured = {
   id: "about-me",
   title: "How I Build",
@@ -8,5 +10,5 @@ export const featured = {
     performance: "30% faster",
     retention: "50%+ retention",
   },
-  images: ["/assets/awe1.png"],
+  images: [awe1],
 }
