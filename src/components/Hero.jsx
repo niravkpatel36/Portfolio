@@ -51,27 +51,33 @@ export default function Hero(){
 
         {/* LEFT SIDE */}
         <div>
-          <div className="kicker">Software Engineer • Data & Frontend</div>
-
+          <div className="kicker">Software Engineer</div>
+          
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mt-4">
-            I design resilient data systems and pixel-perfect UI that make product teams faster.
+            Building production-ready systems across APIs, data pipelines, and user-facing products.
           </h1>
-
+          
           <p className="subtle mt-4 max-w-xl">
-            I’m an intern-ready engineer who ships production pipelines, realtime UX, and developer-first
-            infrastructure. I focus on measurable impact and delightful product surfaces.
+            I design, build, and operate software used by thousands of users, spanning backend APIs, data infrastructure, and user-facing applications. My work focuses on performance, reliability, and measurable business impact.
           </p>
-
+          
           <div className="mt-6 flex gap-3 items-center">
-            <a href="#projects" className="ribbon lift" aria-label="View projects">See case studies</a>
-            <a href="/Nirav_Patel_Resume.pdf" className="glass px-4 py-2 rounded-md text-sm">Resume</a>
-          </div>
+            <a
+            href="/Nirav_Patel_Resume.pdf"
+            className="cta-primary"
+            aria-label="View resume"
+            >
+              View Resume
+              </a>
+            </div>
 
-          <div className="mt-6 flex gap-4 text-sm subtle">
-            <div>Available: Toronto</div>
-            <div>•</div>
-            <div>Open to internships</div>
+        <div className="mt-6 flex gap-4 text-sm subtle">
+
+          <div>Toronto, Canada</div>
+          <div>•</div>
+          <div>Open to internships & co-ops</div>
           </div>
+          
         </div>
 
         {/* RIGHT SIDE — FEATURED PROJECT CARD */}

@@ -1,18 +1,12 @@
-// src/data/featured.js
-
 export const featured = {
-  id: "current-build",
-  title: "Personal Data Platform (In Progress)",
+  id: "about-me",
+  title: "How I Build",
   short:
-    "Designing a modular data platform with ingestion, transformation, and analytics layers — focused on scale, observability, and clean DX.",
-  highlights: [
-    "ETL pipelines",
-    "Schema evolution",
-    "Realtime dashboards",
-  ],
+    "I focus on building systems that are clear in structure, observable and operable, reliable in production, and able to evolve. I prioritize clarity in code and communication because it enables systems and teams to scale, as reflected in the metrics below.",
   metrics: {
-    throughput: "10M+/day",
-    latencyReduction: "8×",
+    users: "5,000+ users",
+    performance: "30% faster",
+    retention: "50%+ retention",
   },
   images: ["/assets/awe1.png"],
 }
