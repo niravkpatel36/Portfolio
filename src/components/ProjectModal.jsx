@@ -65,28 +65,6 @@ export default function ProjectModal({ project, onClose }) {
                     View Repository
                   </a>
                 )}
-                {/* Architecture button */}
-                {project.architecture && (
-                  <a
-                    className="btn-common"
-                    href={project.architecture}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Architecture
-                  </a>
-                )}
-                {/* Case Study button */}
-                {project.caseStudy && (
-                  <a
-                    className="btn-common"
-                    href={project.caseStudy}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Case Study
-                  </a>
-                )}
                 <button className="ml-auto subtle" onClick={onClose}>
                   Close
                 </button>
