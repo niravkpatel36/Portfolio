@@ -49,12 +49,13 @@ export default function Nav() {
               alignItems: "center",
             }}
           >
-            <a className="nav-link" href="#projects">
-              Projects
-            </a>
 
             <a className="nav-link" href="#experience">
               Experience
+            </a>
+
+            <a className="nav-link" href="#projects">
+              Projects
             </a>
 
             <a className="nav-cta" href="#contact">

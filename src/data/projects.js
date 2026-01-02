@@ -11,6 +11,8 @@ import skrt2 from '../assets/skrt2.png';
 import skrt3 from '../assets/skrt3.png';
 import network1 from '../assets/network1.png';
 import commerce1 from '../assets/commerce1.png';
+import aifa1 from '../assets/aifa1.png';
+import aifa2 from '../assets/aifa2.png';
 
 export const projects = [
   {
@@ -64,6 +66,18 @@ export const projects = [
   description: 'Network is a full-stack social media prototype built with Django that allows users to create and edit posts, follow other users, and interact with content through likes. It features dynamic, asynchronous updates using JavaScript fetch calls, responsive design with HTML/CSS, and scalable data handling with SQLite and Django ORM. The platform implements secure user authentication, pagination for feeds, and a clean separation of concerns between frontend and backend, demonstrating full-stack best practices for modern web applications.',
   highlights: ['Asynchronous Post Editing', 'Follower System'],
   },
+  {
+  id: 'aifa',
+  title: 'AI Financial Advisor',
+  repo: 'https://github.com/niravkpatel36/AIFA.git',
+  stack: 'Next.js · React · PostgreSQL · Redis · Docker · LLMs',
+  short: 'An AI-powered financial advisory platform delivering personalized guidance through scalable architecture.',
+  images: [aifa1, aifa2],
+  description: 'AIFA is a production-oriented, AI-powered financial advisory platform designed to deliver personalized, explainable, and compliant financial guidance at scale. Built as a multi-tenant SaaS system, the platform combines a modern Next.js frontend with a scalable FastAPI backend that orchestrates authentication, financial advice generation, portfolio analysis, and subscription billing. The system emphasizes modular service boundaries, secure JWT-based authentication, and deterministic data flows, while integrating large language models for context-aware financial insights. AIFA is architected for extensibility, regulatory awareness, and real-world deployment.',
+  highlights: [
+    'LLM-Powered',
+    'In Progress'],
+  }
 ];
 
 

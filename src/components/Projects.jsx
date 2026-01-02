@@ -27,7 +27,7 @@ export default function Projects() {
         <div>
           <h2 className="text-3xl font-bold">Selected projects</h2>
           <p className="subtle mt-1">
-            Grid-based case studies with interactive previews.
+            A curated selection of recent work.
           </p>
         </div>
       </div>
