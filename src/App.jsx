@@ -23,12 +23,43 @@ export default function App(){
         <Hero />
         <Experience />
         <Projects />
-
-        <section id="contact" className="max-w-6xl mx-auto px-6 py-20">
-          <h2 className="text-3xl font-bold">Contact</h2>
-          <p className="subtle mt-4">
-            Email: <a className="underline" href="mailto:niravkpatel36@gmail.com">niravkpatel36@gmail.com</a>
+        
+        <section
+        id="contact"
+        className="relative max-w-6xl mx-auto px-6 py-20 text-center"
+        >
+          
+          {/* structural divider */}
+          <div
+          aria-hidden
+          className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent"
+          />
+          
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-white/90">
+          Let’s Connect
+          </h2>
+          
+          <p className="mt-3 text-sm text-white/60">
+          Open to conversations and opportunities.
           </p>
+          
+          <div className="mt-6">
+            <a
+            href="mailto:niravkpatel36@gmail.com"
+            className="
+            inline-flex items-center
+            rounded-full px-5 py-2
+            text-sm font-normal
+            text-white/75
+            bg-white/5 backdrop-blur
+            border border-white/10
+            hover:bg-white/10 hover:text-white/90
+            transition-all duration-300
+            "
+            >
+              niravkpatel36@gmail.com
+            </a>
+          </div>
         </section>
 
         <Footer />
