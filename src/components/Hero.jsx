@@ -64,6 +64,8 @@ export default function Hero(){
           <div className="mt-6 flex gap-3 items-center">
             <a
             href="/Nirav_Patel_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="cta-primary"
             aria-label="View resume"
             >
