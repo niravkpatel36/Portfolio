@@ -1,4 +1,4 @@
-import awe1 from '../assets/awe1.png';
+import card from '../assets/card.jpg';
 
 export const featured = {
   id: "about-me",
@@ -10,5 +10,5 @@ export const featured = {
     performance: "30% faster",
     retention: "50%+ retention",
   },
-  images: [awe1],
+  images: [card],
 }
