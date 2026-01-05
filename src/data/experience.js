@@ -6,7 +6,7 @@ export const experience = [
     role: 'Software Engineer Intern (Returning Intern)',
     period: 'Apr 2024 - Aug 2024, Apr 2025 - Aug 2025',
     bullets: [
-      'Co-architected and shipped www.traininghub.io with Python REST APIs and React, supporting auth, enrollment, and course workflows for 5,000+ users across 60+ programs.',
+      'Co-architected and shipped the company website with Python REST APIs and React, supporting auth, enrollment, and course workflows for 5,000+ users across 60+ programs.',
       'Built backend integrations and data pipelines to ingest course metadata and live session logs, increasing analytics refresh cadence from weekly to daily for 500+ active users.',
       'Optimized BigQuery SQL, API contracts, and validation layers, reducing dashboard latency by ~30% and increasing learner retention by 50%+.',
       'Deployed and operated AWS infrastructure using Terraform and CI/CD pipelines, supporting version-controlled environments and reliable production releases.'
@@ -35,5 +35,16 @@ export const experience = [
       'Automated feedback processing and performed data analysis (Excel) to optimize workshop design, improving engagement and operational efficiency.'
     ],
     location: 'Greater Toronto Area'
+  },
+  {
+    id: 'real-estate',
+    company: 'HomeLife Realty Services Inc.',
+    role: 'Realtor',
+    period: 'Jan 2026 - Present',
+    bullets: [
+      'Represented buyers and sellers through the end-to-end real estate process, including property showings, offer preparation, negotiations, and closing coordination.',
+      'Prepared and reviewed agreements of purchase and sale, conducted market analysis, and ensured compliance with provincial real estate regulations.'
+    ],
+    location: 'Ontario'
   }
 ]

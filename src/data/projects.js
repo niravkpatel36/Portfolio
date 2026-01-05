@@ -70,7 +70,7 @@ export const projects = [
   id: 'aifa',
   title: 'AI Financial Advisor',
   repo: 'https://github.com/niravkpatel36/AIFA.git',
-  stack: 'Next.js · React · PostgreSQL · Redis · Docker · LLMs',
+  stack: 'Next.js · React · SQL · Redis · Docker · OpenAI API',
   short: 'An AI-powered financial advisory platform delivering personalized guidance through scalable architecture.',
   images: [aifa1, aifa2],
   description: 'AIFA is a production-oriented, AI-powered financial advisory platform designed to deliver personalized, explainable, and compliant financial guidance at scale. Built as a multi-tenant SaaS system, the platform combines a modern Next.js frontend with a scalable FastAPI backend that orchestrates authentication, financial advice generation, portfolio analysis, and subscription billing. The system emphasizes modular service boundaries, secure JWT-based authentication, and deterministic data flows, while integrating large language models for context-aware financial insights. AIFA is architected for extensibility, regulatory awareness, and real-world deployment.',
